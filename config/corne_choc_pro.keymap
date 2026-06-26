@@ -30,7 +30,7 @@
                 &kp ESC   &kp Q &kp W &kp E &kp R &kp T &kp CAPS   &to 0 &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp TAB   &kp A &kp S &kp D &kp F &kp G &kp LGUI   &to 1 &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B                     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                                      &kp LALT &mo LCTRL &kp SPACE          &kp RET &mo 1 &mo 2
+                                      &kp LALT &kp LCTRL &kp SPACE          &kp RET &mo 1 &mo 2
             >;
         };
 
@@ -38,14 +38,13 @@
             display-name = "NUMBER";
             // -----------------------------------------------------------------------------------------
             // |  ESC |  1  |  2  |  3  |  4  |  5   |  CAPS | 0 |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | TAB | BT1 | BT2 | BT3 | BT4 | BT5   |  LGUI  | 1  |     |     |  UP |     |     |  UP  |
+            // | TAB | BT1 | BT2 | BT3 | BT4 | BT5   |  LGUI  | 2  |     |     |  UP |     |     |  UP  |
             // | SHFT | BTCR| RGB | RST | BOOT| Unlock|    |       |     |   LFT  |  DWN   |  RGT   |     | DWN  |
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
             bindings = <
-                &kp ESC   &kp N1       &kp N2          &kp N3       &kp N4       &kp N5       &kp CAPS &to 0 &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-                &kp TAB &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LGUI  &to 1  &kp trans &kp trans &kp UP &trans &trans &UP
-                &kp LSHFT &bt BT_CLR   &rgb_ug RGB_TOG &sys_reset   &bootloader  &studio_unlock                   &trans   &kp LEFT   &kp DOWN &RIGHT    &trans &DOWN
-                                                       &kp LGUI     &trans       &kp SPACE                        &kp LGUI &trans   &kp SPACE
+                &kp ESC   &kp N1       &kp N2          &kp N3       &kp N4       &kp N5       &kp CAPS &to 0 &kp N6   &kp N7   &kp N8    &kp N9     &kp N0   &kp BSPC
+                &kp TAB   &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LGUI &to 2 &trans   &trans   &kp UP   &trans     &trans   &kp UP
+                &kp LSHFT &bt BT_CLR   &rgb_ug RGB_TOG &sys_reset   &bootloader  &studio_unlock                  &trans   &kp LEFT &kp DOWN &kp RIGHT &trans   &kp DOWN
             >;
         };
 
